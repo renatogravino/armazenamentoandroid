@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Campo para inserir os dados -->
+    <EditText
+        android:id="@+id/etInputData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a informação para salvar"
+        android:minHeight="48dp" />
+
+    <!-- Botão para salvar -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Salvar em JSON" />
+
+    <!-- Botão para recuperar/carregar -->
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Carregar Dados" />
+
+    <!-- Local onde o dado recuperado será exibido -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Os dados carregados aparecerão aqui."
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
